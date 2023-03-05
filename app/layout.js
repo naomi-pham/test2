@@ -1,5 +1,5 @@
 import "./globals.css";
-import Header from "./components/layout/Header";
+import Header from "./Header";
 
 export const metadata = {
   title: "Next App Todo",
