@@ -9,8 +9,8 @@ async function getTodoItem(id) {
   return todo;
 }
 
-const Todo = async ({ params }) => {
-  const todo = await getTodoItem(params.id);
+const Todo = ({ params }) => {
+  const todo = use(getTodoItem(params.id));
 
   return (
     <div className="flex flex-col gap-5">
